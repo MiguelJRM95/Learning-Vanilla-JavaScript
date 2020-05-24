@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Básicos</title>
+</head>
+<body>
+    <h1>Ejercicios básicos JavaScript</h1>
+    <script>
+        /*1)Programa un función que cuente el numero de caracteres de una cadena de texto, pe; miFuncion("Hola Mundo") devolverá 10*/
+        //elemento.length
+
+           function miFuncion(string) {
+               return string.length;
+           }
+
+           console.log(miFuncion('Hola Mundo'));
+        
+
+
+        /*2)Programa una funcion que te devuelva el texto recortado segun el numero de caracteres indicados, pe; miFuncion("Hola Mundo", 4) devolvera 'Hola'*/
+
+          function miFuncion2(cadena, recortado) {
+              let string = cadena;
+              let division = string.slice(0, recortado);
+              return division;
+            }
+
+          console.log(miFuncion2('Hola Mundo', 4));
+          
+
+
+
+
+
+
+        /*3)Programa una funcion que dada una String te devuelva un Array de textos separados por cierto caracter, pe; miFUncion('Hola que tal', '') devolvera ['hola', 'que', 'tal']*/
+        //elemento.split
+
+          function miFuncion3(stringDiv, divisor) {
+              return stringDiv.split(divisor);
+          }
+
+          console.log(miFuncion3('Hola que tal', ' '));
+
+
+
+
+
+        /*4) Programa una funcion que repita un texto X veces, pe; miFuncion('Hola Mundo', 3) devolvera Hola Mundo Hola Mundo Hola Mundo  */
+           
+        function miFuncion4(cadena, multiplicador) {
+            return cadena.repeat(multiplicador);
+        }
+
+        console.log(miFuncion4('Hola Mundo', 3));
+
+
+    </script>
+</body>
+</html>
